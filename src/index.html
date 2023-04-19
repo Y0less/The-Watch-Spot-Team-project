@@ -4,20 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>The Watch Spot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- Header -->
+    <load src="partials/header.html" />
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <main>
+      <!-- section Hero -->
+      <load src="partials/Hero.html" />
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+      <!-- section About Us -->
+      <load src="partials/about-us.html" />
+
+      <!-- section Catalog -->
+      <load src="partials/catalog.html" />
+
+      <!-- section New watches -->
+      <load src="partials/new-watches.html" />
+
+      <!-- section Sale -->
+      <load src="partials/sale.html" />
+    </main>
+
+    <!-- Footer -->
+    <load src="partials/footer.html" />
+
+    <!-- Modal window -->
+    <load src="partials/modal.html" />
 
     <script type="module" src="/main.js"></script>
   </body>
