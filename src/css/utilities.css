@@ -6,3 +6,35 @@ body {
     letter-spacing: -0.02em;
     color: var(--black-color);
 }
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Mobile responsive container */
+@media screen and (min-width: 375px) {
+    .container {
+        width: calc(335px + 2*20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Tablet adaptive container */
+@media screen and (min-width: 768px) {
+    .container {
+        width: calc(704px + 2*32px);
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* Desktop adaptive container */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: calc(1176px + 2*24px);
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
