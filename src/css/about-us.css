@@ -2,7 +2,6 @@
   padding-top: 40px;
   padding-bottom: 80px;
 }
-
 .about-us-title {
   height: 40px;
   font-weight: 600;
@@ -20,7 +19,6 @@
     padding-top: 64px;
     padding-bottom: 128px;
   }
-
   .about-us-text {
     width: 220px;
   }
@@ -30,7 +28,6 @@
   .about-us-list {
     gap: 20px;
   }
-
   .about-us-title {
     font-size: 40px;
     margin-bottom: 0;
@@ -41,7 +38,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 @media screen and (max-width: 767px) {
   .about-us-text {
     color: var(--black-color);
