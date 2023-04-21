@@ -1,3 +1,13 @@
-.footer-text {
-    font-size: 28px;
+.footer {
+  background-color: var(--dark-green-color);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 375px) {
+  .container-footer {
+    width: 335px;
+    outline: 1px solid tomato;
+  }
+  .footer-logo-icon {
+  }
 }
