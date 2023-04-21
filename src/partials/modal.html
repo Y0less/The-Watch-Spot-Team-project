@@ -1,3 +1,134 @@
-<div class="modal">
-  <p class="modal-text">Modal window</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <div class="backdrop is-hiddenn" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-btn-icon-small">
+            <use href="/img/icons.svg#cross-small"></use>
+          </svg>
+          <svg class="modal-close-btn-icon-big">
+            <use href="/img/icons.svg#cross-big"></use>
+          </svg>
+        </button>
+        <div class="modal-win-wrap">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <!-- замінити зображення -->
+              <picture>
+                <!-- <source
+                  srcset="
+                    /img/clock-desktop.webp    1x,
+                    /img/clock-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                /> -->
+                <source
+                  srcset="
+                    /img/clock-desktop.jpg    1x,
+                    /img/clock-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <!-- <source
+                  srcset="
+                    /img/clock-tablet.webp    1x,
+                    /img/clock-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                /> -->
+                <source
+                  srcset="/img/clock-tablet.jpg 1x, /img/clock-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <!-- <source
+                  srcset="
+                    /img/clock-mobile.webp    1x,
+                    /img/clock-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                /> -->
+                <source
+                  srcset="/img/clock-mobile.jpg 1x, /img/clock-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="product-img"
+                  src="/img/clock-mobile.jpg"
+                  alt="clock-img"
+                />
+              </picture>
+            </div>
+            <div class="card-text">
+              <p class="product-desc">
+                Tube Watch S42 Date Steel With Black Case
+              </p>
+              <p class="product-price">€395</p>
+            </div>
+          </div>
+          <form class="modal-form">
+            <label class="modal-form-field">
+              <span class="modal-form-desc">Full name</span>
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                placeholder="Enter your full name"
+                pattern="^[a-zA-Z]+$"
+                minlength="2"
+                required
+              />
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-desc">Email</span>
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user_email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-desc">Card number</span>
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_card_number"
+                placeholder="Enter card"
+                pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                title="XXXX-XXXX-XXXX-XXXX"
+                required
+              />
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-desc">Comments</span>
+              <textarea
+                class="modal-form-message modal-form-input"
+                name="user_comments"
+                placeholder="Enter your text"
+              ></textarea>
+            </label>
+            <button class="modal-form-btn" type="submit">submit</button>
+            <p class="modal-form-text">
+              By clicking on “Send message” button, you agree to our
+              <a href="">Privacy Policy</a>,&#32;<span
+                >and allow Promodo to use this information for marketing
+                purposes.</span
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
