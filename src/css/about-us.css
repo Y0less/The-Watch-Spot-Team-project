@@ -2,6 +2,15 @@
   padding-top: 40px;
   padding-bottom: 80px;
 }
+
+.about-us-title {
+  height: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-color);
+  margin-bottom: 40px;
+}
 @media screen and (min-width: 767px) {
   .about-us-content {
     display: flex;
@@ -16,9 +25,7 @@
   .about-us-list {
     gap: 20px;
   }
-  .about-us-title {
-    margin-right: 40px;
-  }
+
   .about-us-title {
     font-size: 40px;
   }
@@ -27,18 +34,14 @@
   display: flex;
   flex-wrap: wrap;
 }
-.about-us-title {
-  height: 40px;
-  font-weight: 600;
-  font-size: 32px;
-  letter-spacing: -0.02em;
-  color: var(--dark-green-color);
-  margin-bottom: 40px;
-}
+
 @media screen and (max-width: 767px) {
   .about-us-text {
     color: var(--black-color);
     width: 335px;
+  }
+  .about-us-title {
+    margin-right: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -73,7 +76,7 @@
 @media screen and (min-width: 1280px) {
   .clock-animation {
     margin-right: auto;
-    margin-left: 250px;
+    margin-left: 282px;
     width: 892px;
     height: 500px;
   }
