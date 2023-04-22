@@ -1,9 +1,9 @@
 :root {
   --modal-primary-accent-color: #404bbf;
   --modal-icon-stroke: #141414;
-  --primary-text-color: #141414;
-  --secondary-text-color: rgba(20, 20, 20, 0.5);
-  --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-primary-text-color: #141414;
+  --modal-secondary-text-color: rgba(20, 20, 20, 0.5);
+  --modal-transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========ЗАГАЛЬНІ=СТИЛІ======== */
@@ -25,8 +25,8 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: auto;
-  transition: opacity var(--transition-duration-and-func),
-    visibility var(--transition-duration-and-func);
+  transition: opacity var(--modal-transition-duration-and-func),
+    visibility var(--modal-transition-duration-and-func);
 }
 
 .backdrop.is-hidden {
@@ -47,7 +47,7 @@ button {
     0px 0px 36.2375px rgba(0, 0, 0, 0.025),
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
-  transition: transform var(--transition-duration-and-func);
+  transition: transform var(--modal-transition-duration-and-func);
 }
 
 .product-card {
@@ -86,7 +86,7 @@ button {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: var(--primary-text-color);
+  color: var(--modal-primary-text-color);
 }
 
 .product-price {
@@ -95,7 +95,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: var(--secondary-text-color);
+  color: var(--modal-secondary-text-color);
 }
 
 .modal-form {
@@ -125,7 +125,7 @@ button {
   width: 20px;
   height: 20px;
   stroke: var(--modal-icon-stroke);
-  transition: stroke var(--transition-duration-and-func);
+  transition: stroke var(--modal-transition-duration-and-func);
 }
 
 .modal-close-btn-icon-big {
@@ -151,7 +151,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: var(--primary-text-color);
+  color: var(--modal-primary-text-color);
 }
 
 .modal-form-input {
@@ -166,11 +166,11 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #000000;
-  transition: border-color var(--transition-duration-and-func);
+  transition: border-color var(--modal-transition-duration-and-func);
 }
 
 .modal-form-input::placeholder {
-  color: var(--secondary-text-color);
+  color: var(--modal-secondary-text-color);
 }
 
 .modal-form-input:hover,
@@ -190,7 +190,7 @@ button {
 }
 
 .modal-form-message::placeholder {
-  color: var(--secondary-text-color);
+  color: var(--modal-secondary-text-color);
 }
 
 .modal-form-btn {
@@ -209,7 +209,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  transition: background-color var(--transition-duration-and-func);
+  transition: background-color var(--modal-transition-duration-and-func);
 }
 
 .modal-form-btn:hover,
@@ -284,7 +284,7 @@ button {
     width: 24px;
     height: 24px;
     stroke: var(--modal-icon-stroke);
-    transition: stroke var(--transition-duration-and-func);
+    transition: stroke var(--modal-transition-duration-and-func);
   }
 
   .modal-close-btn:hover .modal-close-btn-icon-big {
@@ -319,6 +319,14 @@ button {
     line-height: 1.12;
     letter-spacing: -0.02em;
   }
+
+  @media screen and (max-height: 688px) {
+    .modal {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0%);
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -340,5 +348,13 @@ button {
 
   .modal-form-text > span {
     display: block;
+  }
+
+  @media screen and (max-height: 694px) {
+    .modal {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0%);
+    }
   }
 }
