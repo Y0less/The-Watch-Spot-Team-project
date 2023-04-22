@@ -56,8 +56,8 @@ button {
 }
 
 .product-img-wrap {
-  height: 325px;
   padding-top: 26px;
+  padding-bottom: 25px;
 }
 
 .product-img {
