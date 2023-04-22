@@ -8,9 +8,18 @@ closeModalBtn.addEventListener('click', closeModal);
 function openModal() {
   modal.classList.remove('is-hidden');
   document.body.style.overflow = 'hidden';
+  document.addEventListener('keydown', closeModalWin);
 }
 
 function closeModal() {
   modal.classList.add('is-hidden');
   document.body.style.overflow = '';
+}
+
+function closeModalWin(event) {
+  console.log('click');
+  if (event.code === 'Escape') {
+    closeModal();
+    document.removeEventListener('keydown', closeModalWin);
+  }
 }
