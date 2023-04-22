@@ -3,11 +3,117 @@
   padding-top: 40px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 375px) {
-  .container-footer {
-    width: 335px;
-    outline: 1px solid tomato;
+.footer-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-logo-contacts {
+  margin-bottom: 40px;
+}
+.footer-list-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 400;
+
+  font-size: 14px;
+  line-height: 1.285;
+  letter-spacing: -0.02em;
+  color: var(--white-color-color);
+}
+.footer-title-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.285;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white-color-color);
+}
+.footer-social {
+  margin-bottom: 80px;
+}
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-social-item {
+  fill: var(--white-color-color);
+  height: 40px;
+  width: 40px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border: 1px solid var(--white-color-color);
+}
+.footer-logo-icon {
+  fill: inherit;
+}
+.footer-logo {
+  margin-bottom: 40px;
+}
+.footer-social-list .footer-social-item + .footer-social-item {
+  margin-left: 14px;
+}
+.footer-copy-privacy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  opacity: 0.9;
+}
+.footer-privacy-desc {
+  margin-bottom: 14px;
+}
+.footer-privacy-servis {
+  display: flex;
+  gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 80px;
   }
-  .footer-logo-icon {
+  .footer-copy-privacy {
+    display: flex;
+    justify-content: space-between;
   }
+  .footer-list-contacts {
+    font-size: 18px;
+    line-height: 1.333;
+  }
+
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  .footer-title-nav-list {
+    font-size: 18px;
+    line-height: 1.333;
+  }
+  .footer-copy-privacy {
+    font-size: 14px;
+    line-height: 1.285;
+  }
+  .footer-privacy-desc {
+    margin-bottom: 0;
+  }
+  .footer-title-nav-list {
+    gap: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
