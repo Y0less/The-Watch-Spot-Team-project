@@ -1,8 +1,10 @@
 /* ======================CATALOG======================== */
+.catalog {
+  margin-bottom: 80px;
+}
 .catalog-container {
   position: relative;
   padding-bottom: 82px;
-  margin-bottom: 80px;
 }
 .catalog-heder {
   font-weight: 600;
@@ -40,7 +42,7 @@
   overflow: hidden;
   left: 0px;
   top: 0px;
-  background:  var(--dark-green-color);
+  background: var(--dark-green-color);
   border-radius: 8px;
   padding: 40px 59px 40px 40px;
   gap: 14px;
@@ -57,7 +59,7 @@
   line-height: 1.286;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color:  var(--white-color-color);
+  color: var(--white-color-color);
   padding-top: 6px;
   margin-bottom: 10px;
 }
@@ -106,7 +108,7 @@
   line-height: 1.166;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white-color-color) ;
+  color: var(--white-color-color);
   background: var(--dark-green-color);
   border-radius: 8px;
   border: 0px;
@@ -135,9 +137,11 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-  .catalog-container {
-    padding-bottom: 90px;
+  .catalog {
     margin-bottom: 128px;
+  }
+  .catalog-container {
+    padding-bottom: 90px;   
   }
   .catalog-list {
     flex-direction: row;
@@ -163,9 +167,11 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+  .catalog {
+    margin-bottom: 0;
+  }
   .catalog-container {
     padding-bottom: 210px;
-    margin-bottom: 0;
   }
   .catalog-list {
     row-gap: 64px;
@@ -184,6 +190,6 @@
   }
   .catalog-btn {
     right: 24px;
-    bottom: 80px;    
+    bottom: 80px;
   }
 }
