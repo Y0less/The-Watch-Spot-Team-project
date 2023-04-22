@@ -1,10 +1,10 @@
 /* ======================CATALOG======================== */
-.catalog {
+.catalog {  
   margin-bottom: 80px;
+  padding-bottom: 82px;
 }
 .catalog-container {
   position: relative;
-  padding-bottom: 82px;
 }
 .catalog-heder {
   font-weight: 600;
@@ -101,7 +101,7 @@
 .catalog-btn {
   position: absolute;
   right: 20px;
-  bottom: 0;
+  bottom: -82px;
   transform: translate(0, 0);
   font-weight: 400;
   font-size: 12px;
@@ -139,10 +139,8 @@
   }
   .catalog {
     margin-bottom: 128px;
-  }
-  .catalog-container {
-    padding-bottom: 90px;   
-  }
+    padding-bottom: 90px;
+  } 
   .catalog-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,6 +156,7 @@
   }
   .catalog-btn {
     right: 32px;
+    bottom: -90px;
     padding: 18px 35px;
   }
 }
@@ -169,10 +168,8 @@
   }
   .catalog {
     margin-bottom: 0;
-  }
-  .catalog-container {
     padding-bottom: 210px;
-  }
+  } 
   .catalog-list {
     row-gap: 64px;
     column-gap: 24px;
@@ -190,6 +187,7 @@
   }
   .catalog-btn {
     right: 24px;
-    bottom: 80px;
+    bottom: -80px;
+    transform: translate(0, 100%);
   }
 }
