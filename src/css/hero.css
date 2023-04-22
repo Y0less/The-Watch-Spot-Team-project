@@ -1,3 +1,33 @@
+.hero {
+  background: #141414;
+  padding-top: 122px;
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+
 .hero-text {
-    font-size: 18px;
+}
+
+.watch-img {
 }
