@@ -9,7 +9,7 @@
   font-size: 32px;
   line-height: 1.111;
   letter-spacing: -0.02em;
-  color: #1e2827;
+  color: var(--dark-green-color);
   text-align: left;
   margin-bottom: 40px;
 }
@@ -40,7 +40,7 @@
   overflow: hidden;
   left: 0px;
   top: 0px;
-  background: #1e2827;
+  background:  var(--dark-green-color);
   border-radius: 8px;
   padding: 40px 59px 40px 40px;
   gap: 14px;
@@ -57,7 +57,7 @@
   line-height: 1.286;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #ffffff;
+  color:  var(--white-color-color);
   padding-top: 6px;
   margin-bottom: 10px;
 }
@@ -74,7 +74,7 @@
   font-size: 14px;
   line-height: 1.286;
   letter-spacing: -0.02em;
-  color: #141414;
+  color: var(--black-color);
   text-align: left;
   margin-bottom: 4px;
   cursor: pointer;
@@ -106,15 +106,15 @@
   line-height: 1.166;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #1e2827;
+  color: var(--white-color-color) ;
+  background: var(--dark-green-color);
   border-radius: 8px;
   border: 0px;
   padding: 14px 28px;
 }
 .catalog-btn:hover,
 .catalog-btn:focus {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-color-color);
 }
 
 @media screen and (min-width: 375px) {
