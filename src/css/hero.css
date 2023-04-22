@@ -12,11 +12,24 @@
   color: #ffffff;
 }
 .swiper {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 5px 20px;
 }
 .swiper-wrapper {
 }
 .swiper-slide {
 }
+
+.image-slider-img {
+}
+
+.watch-img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .swiper-pagination {
 }
 .swiper-button-prev {
@@ -27,7 +40,12 @@
 }
 
 .hero-text {
-}
-
-.watch-img {
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 248px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
