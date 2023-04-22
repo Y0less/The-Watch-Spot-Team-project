@@ -46,8 +46,6 @@
   .about-us-title {
     margin-right: 40px;
   }
-}
-@media screen and (max-width: 768px) {
   .about-us-list {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +82,7 @@
 @media screen and (min-width: 1280px) {
   .clock-animation {
     margin-right: auto;
-    margin-left: 282px;
+    margin-left: 24%;
     width: 892px;
     height: 500px;
   }
