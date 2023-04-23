@@ -20,12 +20,19 @@
 
 .swiper {
   width: 266px;
+  margin: 0;
 }
 
 .swiper-wrapper {
-  background: #1e2827;
   width: 100%;
-  padding: 5px 20px;
+  height: 200px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e2827;
 }
 
 .hero-swiper-nav {
@@ -99,11 +106,6 @@
 .hero-watch-img {
   width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .swiper-wrapper {
-    max-height: 200px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -123,7 +125,6 @@
 
   .swiper-wrapper {
     height: 255px;
-    padding: 11px 44px;
   }
 
   .hero-swiper-nav {
