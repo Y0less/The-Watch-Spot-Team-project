@@ -11,6 +11,13 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.hero-swiper-pagination-number',
     type: 'fraction',
+    dynamicMainBullets: 2,
+    formatFractionCurrent: function (number) {
+      return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+      return ('0' + number).slice(-2);
+    },
     renderFraction: function (currentClass, totalClass) {
       return `<span class="hero-current-slide ${currentClass}"></span
             ><span class="hero-swiper-pagination-line"></span
