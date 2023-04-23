@@ -21,6 +21,9 @@
   height: 200px;
   background-color: var(--dark-green-color);
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .amount-watches {
@@ -50,8 +53,12 @@
   gap: 6px;
   margin-left: auto;
 }
-.left {
+.previouse {
   margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.next {
+  border: 1px solid var(--white-color-color);
 }
 .button-slaid {
   display: flex;
@@ -60,7 +67,7 @@
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+
   background-color: transparent;
   padding: 0px;
 }
@@ -72,6 +79,7 @@
   width: 18px;
   height: 18px;
 }
+
 .hero-text {
   font-weight: 300;
   font-size: 14px;
@@ -80,7 +88,10 @@
   color: var(--white-color-color);
   width: 248px;
   margin-left: auto;
-  margin-bottom: 40px;
+
+  margin-top: 40px;
+}
+.image-hero {
   margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -92,6 +103,9 @@
     width: 653px;
     font-size: 60px;
     line-height: 1.03;
+  }
+  .hero-text {
+    margin-top: 70px;
   }
   .thumb-for-watches-hero {
     width: 436px;
@@ -108,5 +122,26 @@
 @media screen and (min-width: 1280px) {
   .hero {
     padding-bottom: 80px;
+  }
+  .title-hero {
+    width: 750px;
+    margin: 0px;
+  }
+  .hero-text {
+    order: 2;
+    width: 282px;
+
+    margin-top: 0px;
+  }
+  .wraper-for-slaid {
+    order: 3;
+  }
+  .thumb-for-watches-hero {
+    margin-top: 122px;
+  }
+  .image-hero {
+    order: 4;
+    margin-left: 64px;
+    margin-top: 43px;
   }
 }

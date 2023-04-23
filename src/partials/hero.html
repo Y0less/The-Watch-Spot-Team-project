@@ -1,20 +1,37 @@
-<section class="section hero">
+<section class="hero">
   <div class="container flex">
     <h1 class="title-hero">Welcome to our collection of premium watches</h1>
 
     <div class="wraper-for-slaid">
       <div class="thumb-for-watches-hero">
-        <img src="" alt="watches" width="226" />
+        <picture class="image-slaid">
+          <source
+            srcset="./img/slider/watch1.png 1x, ./img/slider/watch1@2x.png 2x"
+            media="min-width:1200px"
+          />
+          <source
+            srcset="./img/slider/watch1.png 1x, ./img/slider/watch1@2x.png 2x"
+            media="min-width:768px"
+          />
+          <source
+            srcset="
+              ./img/slider/watch1-mobile.png    1x,
+              ./img/slider/watch1-mobile@2x.png 2x
+            "
+            media="min-width:320px"
+          />
+          <img src="./img/slider/watch1-mobile.png" alt="watches slaid" />
+        </picture>
       </div>
       <div class="wraper-for-buttons">
-        <button class="button-slaid left" type="button">
+        <button class="button-slaid previouse" type="button">
           <svg class="icon-for-slaid">
-            <use href="../img/icons.svg#btn-prev-small"></use>
+            <use href="./img/icons.svg#btn-prev-small"></use>
           </svg>
         </button>
-        <button class="button-slaid" type="button">
+        <button class="button-slaid next" type="button">
           <svg class="icon-for-slaid">
-            <use href="../img/icons.svg#btn-next-small"></use>
+            <use href="./img/icons.svg#btn-next-small"></use>
           </svg>
         </button>
         <div class="wraper-for-numbers">
@@ -24,11 +41,35 @@
         </div>
       </div>
     </div>
+
     <p class="hero-text">
       Our watches are not just timepieces, but also an expression of your
       personality and lifestyle. From classic designs to modern ones, we have a
       watch to suit every taste and occasion.
     </p>
-    <img src="" alt="watch on arm" width="335" height="410" />
+    <picture class="image-hero">
+      <source
+        srcset="
+          ./img/hero-images/hero-desktop.jpg    1x,
+          ./img/hero-images/hero-desktop@2x.jpg 2x
+        "
+        media="min-width:1200px"
+      />
+      <source
+        srcset="
+          ./img/hero-images/hero-tablet.jpg    1x,
+          ./img/hero-images/hero-tablet@2x.jpg 2x
+        "
+        media="min-width:768px"
+      />
+      <source
+        srcset="
+          ./img/hero-images/hero-mobile.jpg    1x,
+          ./img/hero-images/hero-mobile@2x.jpg 2x
+        "
+        media="min-width:320px"
+      />
+      <img src="./img/hero-images/hero-desktop.jpg" alt="watches slaid" />
+    </picture>
   </div>
 </section>
