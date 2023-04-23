@@ -81,7 +81,7 @@
 .footer-copy-privacy {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.666;
+  line-height: 1.166;
   letter-spacing: -0.02em;
   color: #c6cdd1;
   opacity: 0.9;
@@ -156,5 +156,11 @@
 @media screen and (min-width: 1280px) {
   .footer-logo-contacts {
     margin-bottom: 174px;
+  }
+  .footer-logo-contacts {
+    margin-right: 355px;
+  }
+  .footer-social {
+    margin-left: auto;
   }
 }
