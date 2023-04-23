@@ -1,6 +1,13 @@
 :root {
-    --black-color: #141414;
-    --dark-green-color: #1E2827;
-    --white-color-color: #FFFFFF;
-    --timing: 400ms;
+  --black-color: #141414;
+  --dark-green-color: #1e2827;
+  --white-color-color: #ffffff;
+  --hero-primary-accent-color: #404bbf;
+  --hero-primary-text-color: #ffffff;
+  --modal-primary-accent-color: #404bbf;
+  --modal-icon-stroke: #141414;
+  --modal-primary-text-color: #141414;
+  --modal-secondary-text-color: rgba(20, 20, 20, 0.5);
+  --modal-transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --timing: 400ms;
 }
