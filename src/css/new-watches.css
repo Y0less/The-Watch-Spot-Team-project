@@ -1,3 +1,54 @@
-.new-watches-text {
-    font-size: 24px;
+.section-new-watches {
+  padding: 0px 32px;
+  margin: 128px 0px;
+}
+.new-watches-title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
+  margin-bottom: 8px;
+}
+.new-wathces-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #141414;
+  width: 335px;
+  margin-bottom: 40px;
+}
+.wrapper-for-img-watches {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .new-wathces-text {
+    width: 448px;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1e2827;
+  }
+  .wrapper-for-img-watches {
+    flex-direction: row;
+  }
+  .img-new-watches {
+    width: 342px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .new-wathces-text {
+    margin-bottom: 80px;
+  }
+
+  .wrapper-for-img-watches {
+    gap: 24px;
+  }
+  .img-new-watches {
+    width: 576px;
+  }
 }
