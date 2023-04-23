@@ -1,6 +1,5 @@
 .section-about-us {
-  padding-top: 40px;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 .about-us-title {
   height: 40px;
@@ -16,8 +15,7 @@
     flex-wrap: wrap;
   }
   .section-about-us {
-    padding-top: 64px;
-    padding-bottom: 128px;
+    margin-bottom: 128px;
   }
   .about-us-text {
     width: 220px;
@@ -57,10 +55,8 @@
     width: 439px;
   }
   .section-about-us {
-    padding-top: 80px;
-    padding-bottom: 160px;
+    margin-bottom: 160px;
   }
-
   .about-us-text.long {
     width: 380px;
   }
@@ -68,19 +64,25 @@
 .about-us-list {
   display: flex;
 }
-.clock-animation {
+.thumb {
   margin-top: 40px;
   width: 335px;
   height: 365px;
 }
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 @media screen and (min-width: 767px) {
-  .clock-animation {
+  .thumb {
     width: 704px;
     height: 465px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .clock-animation {
+  .thumb {
     margin-right: auto;
     margin-left: 24%;
     width: 892px;
