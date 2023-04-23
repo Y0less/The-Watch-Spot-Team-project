@@ -39,7 +39,7 @@
 @media screen and (max-width: 767px) {
   .about-us-text {
     color: var(--black-color);
-    width: 335px;
+    max-width: 335px;
   }
   .about-us-title {
     margin-right: 40px;
