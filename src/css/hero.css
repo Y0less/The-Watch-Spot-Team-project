@@ -61,6 +61,12 @@
 .swiper-btn-prev {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+.swiper-btn-prev:hover,
+.swiper-btn-prev:focus {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
 .hero-icon-btn-small {
   width: 18px;
   height: 18px;
@@ -70,6 +76,11 @@
 }
 .swiper-btn-next {
   border: 1px solid #ffffff;
+}
+
+.swiper-btn-next:hover,
+.swiper-btn-next:focus {
+  border: 3px solid #ffffff;
 }
 
 .hero-swiper-pagination-number {
