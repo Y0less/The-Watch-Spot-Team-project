@@ -72,8 +72,8 @@
 .mobile-menu-close-icon {
   fill: var(--white-color-color);
   stroke: var(--white-color-color);
-  /* width: 12px;
-  height: 12px; */
+  width: 24px;
+  height: 24px;
 }
 .mobile-menu-list-container {
   height: 100%;
@@ -149,6 +149,8 @@
     line-height: 1.33;
     text-decoration: none;
     text-transform: uppercase;
+    padding-top: 38px;
+    transition: text-decoration var(--modal-transition-duration-and-func);
   }
 
   .header-link:hover,
@@ -156,19 +158,9 @@
     text-decoration: underline;
   }
 
-  .header-tel-btn {
-    display: block;
-    max-width: 159px;
-    max-height: 48px;
-    background-color: var(--dark-green-color);
-    border-radius: 8px;
-    border: none;
-    padding: 18px 35px;
-  }
-
   .header-tel-link {
-    max-width: 159px;
-    max-height: 48px;
+    min-width: 159px;
+    min-height: 48px;
     border-radius: 8px;
     background-color: var(--dark-green-color);
     padding: 18px 36px;
@@ -176,11 +168,12 @@
     font-size: 9px;
     line-height: 1.33;
     color: var(--white-color-color);
+    transition: background-color var(--modal-transition-duration-and-func);
   }
 
   .header-tel-link:hover,
   .header-tel-link:focus {
-    border: 1px solid var(--white-color-color);
+    background-color: var(--modal-primary-accent-color);
   }
 }
 /* ------------------------------TABLET STYLES---------------------------- */
