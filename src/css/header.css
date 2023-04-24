@@ -79,6 +79,9 @@
   justify-content: center;
   align-items: center;
 }
+.mob-menu-header {
+  margin-bottom: 200px;
+}
 /* .mobile-menu-list {
 } */
 .mobile-menu-item {
