@@ -1,3 +1,14 @@
 .new-watches-text {
-    font-size: 24px;
+  font-size: 24px;
+}
+.section-new-watches {
+}
+.new-watches-text {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
 }
