@@ -30,4 +30,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
   },
+  autoplay: {
+    delay: 4000,
+  },
 });
