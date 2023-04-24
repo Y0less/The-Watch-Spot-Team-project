@@ -1,5 +1,5 @@
 .section-new-watches {
-  padding: 128px 32px;
+  padding: 40px 0px;
 }
 .new-watches-title {
   font-weight: 300;
@@ -25,6 +25,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-new-watches {
+    padding: 69px 0px;
+  }
   .new-wathces-text {
     width: 448px;
     font-size: 40px;
@@ -40,6 +43,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .section-new-watches {
+    padding: 80px 0px;
+  }
   .new-wathces-text {
     margin-bottom: 80px;
   }
