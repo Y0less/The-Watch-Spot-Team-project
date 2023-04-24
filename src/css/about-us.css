@@ -1,5 +1,6 @@
 .section-about-us {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  padding-top: 40px;
 }
 
 .about-us-title {
@@ -56,7 +57,8 @@
     flex-wrap: wrap;
   }
   .section-about-us {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
+    padding-top: 64px;
   }
   .about-us-text {
     width: 220px;
@@ -85,7 +87,8 @@
     width: 439px;
   }
   .section-about-us {
-    margin-bottom: 160px;
+    padding-bottom: 160px;
+    padding-top: 80px;
   }
   .about-us-text.long {
     width: 380px;
