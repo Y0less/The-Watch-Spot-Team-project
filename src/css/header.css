@@ -1,7 +1,7 @@
 /* --------------------------------MAIN STYLES---------------------------- */
 
 .header {
-  background-color: #141414;
+  background-color: transparent;
   padding-top: 29px;
   position: absolute;
   width: 100%;
@@ -11,10 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header-nav {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .header-logo {
   display: flex;
@@ -28,7 +24,7 @@
 .header-list {
   display: none;
 }
-.header-tel-btn {
+.header-tel-link {
   display: none;
 }
 .menu-open {
@@ -55,7 +51,6 @@
   pointer-events: auto;
 }
 .mobile-menu-container {
-  /* height: 100%; */
   padding-top: 29px;
   position: relative;
 }
@@ -87,8 +82,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* .mobile-menu-list {
-} */
 .mobile-menu-item {
   text-align: center;
 }
@@ -102,10 +95,11 @@
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
+  transition: color var(--modal-transition-duration-and-func);
 }
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  text-decoration: underline;
+  color: var(--modal-primary-accent-color);
 }
 /* ---------------------------MOBILE MENU STYLES-------------------------- */
 
@@ -149,16 +143,16 @@
     line-height: 1.33;
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 38px;
-    transition: text-decoration var(--modal-transition-duration-and-func);
+    transition: color var(--modal-transition-duration-and-func);
   }
 
   .header-link:hover,
   .header-link:focus {
-    text-decoration: underline;
+    color: var(--modal-primary-accent-color);
   }
 
   .header-tel-link {
+    display: block;
     min-width: 159px;
     min-height: 48px;
     border-radius: 8px;
