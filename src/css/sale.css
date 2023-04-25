@@ -59,6 +59,7 @@
 .sale-valuable {
     display: flex;
     gap: 8px;
+    align-items: baseline;
 }
 
 .sale-val {
