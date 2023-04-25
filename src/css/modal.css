@@ -279,10 +279,6 @@
     stroke: var(--modal-primary-accent-color);
   }
 
-  .modal-form-field:not(:first-child) {
-    margin-top: 24px;
-  }
-
   .modal-form-desc {
     font-size: 14px;
     line-height: 1.29;
@@ -324,6 +320,10 @@
 
   .modal-form {
     width: 508px;
+  }
+
+  .modal-form-field:not(:first-child) {
+    margin-top: 24px;
   }
 
   .modal-form-btn {
