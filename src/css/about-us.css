@@ -12,20 +12,11 @@
   margin-bottom: 40px;
 }
 
-.about-us-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about-us-list {
-  display: flex;
-}
-
 .thumb {
   margin-top: 40px;
 }
 
-.thumb>img {
+.thumb > img {
   width: 100%;
   object-fit: cover;
 }
@@ -36,14 +27,8 @@
     max-width: 335px;
   }
 
-  .about-us-title {
-    margin-right: 40px;
-  }
-
-  .about-us-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
+  .about-us-text.long {
+    margin-top: 20px;
   }
 
   .thumb {
@@ -75,6 +60,7 @@
   }
 
   .about-us-list {
+    display: flex;
     gap: 20px;
   }
 
