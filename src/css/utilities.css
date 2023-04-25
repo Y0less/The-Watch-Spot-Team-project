@@ -5,6 +5,7 @@ body {
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--black-color);
+    background-color: #FBFBFB;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */

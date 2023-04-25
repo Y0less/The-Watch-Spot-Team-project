@@ -1,3 +1,186 @@
-.header-text {
-    font-size: 16px;
+/* --------------------------------MAIN STYLES---------------------------- */
+
+.header {
+  background-color: #141414;
+  padding-top: 29px;
+  position: absolute;
+  width: 100%;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-logo {
+  display: flex;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+}
+.header-logo img {
+  margin-right: 4px;
+}
+.header-list {
+  display: none;
+}
+.header-tel-btn {
+  display: none;
+}
+.menu-open {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+/* ---------------------------MOBILE MENU STYLES-------------------------- */
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-green-color);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  /* height: 100%; */
+  padding-top: 29px;
+  position: relative;
+}
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 29px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.mobile-menu-close-icon {
+  fill: var(--white-color-color);
+  stroke: var(--white-color-color);
+  width: 24px;
+  height: 24px;
+}
+.mobile-menu-list-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mob-menu-header {
+  margin-bottom: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* .mobile-menu-list {
+} */
+.mobile-menu-item {
+  text-align: center;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.mobile-menu-link {
+  color: var(--white-color-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  text-decoration: underline;
+}
+/* ---------------------------MOBILE MENU STYLES-------------------------- */
+
+/* --------------------------------MAIN STYLES---------------------------- */
+
+/* ------------------------------MOBILE STYLES---------------------------- */
+/* ------------------------------MOBILE STYLES---------------------------- */
+/* ------------------------------TABLET STYLES---------------------------- */
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+  }
+  .menu-open {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 80px;
+    font-size: 15px;
+  }
+  .header-logo img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .header-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  .header-link {
+    color: var(--white-color-color);
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.33;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 38px;
+    transition: text-decoration var(--modal-transition-duration-and-func);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    text-decoration: underline;
+  }
+
+  .header-tel-link {
+    min-width: 159px;
+    min-height: 48px;
+    border-radius: 8px;
+    background-color: var(--dark-green-color);
+    padding: 18px 36px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.33;
+    color: var(--white-color-color);
+    transition: background-color var(--modal-transition-duration-and-func);
+  }
+
+  .header-tel-link:hover,
+  .header-tel-link:focus {
+    background-color: var(--modal-primary-accent-color);
+  }
+}
+/* ------------------------------TABLET STYLES---------------------------- */
+/* ------------------------------DESKTOP STYLES---------------------------- */
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/* ------------------------------DESKTOP STYLES---------------------------- */

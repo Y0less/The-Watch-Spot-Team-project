@@ -1,3 +1,123 @@
-.about-us-text {
-    font-size: 20px;
+.section-about-us {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.about-us-title {
+  height: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-color);
+  margin-bottom: 40px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us-list {
+  display: flex;
+}
+
+.thumb {
+  margin-top: 40px;
+}
+
+.thumb>img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-text {
+    color: var(--black-color);
+    max-width: 335px;
+  }
+
+  .about-us-title {
+    margin-right: 40px;
+  }
+
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .thumb {
+    max-width: 335px;
+  }
+
+  .about-us-wrist-watch {
+    height: 365px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-about-us {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+
+  .about-us-text {
+    width: 220px;
+  }
+
+  .about-us-text.long {
+    width: 250px;
+  }
+
+  .about-us-list {
+    gap: 20px;
+  }
+
+  .about-us-title {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .thumb {
+    width: 704px;
+  }
+
+  .about-us-wrist-watch {
+    height: 465px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-text {
+    width: 439px;
+  }
+
+  .section-about-us {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .about-us-text.long {
+    width: 380px;
+  }
+
+  .thumb {
+    margin-right: auto;
+    margin-left: 24%;
+    width: 892px;
+  }
+
+  .about-us-wrist-watch {
+    height: 500px;
+  }
+
+  .about-us-title {
+    margin-right: 110px;
+  }
 }
