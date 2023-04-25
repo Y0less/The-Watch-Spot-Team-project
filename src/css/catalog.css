@@ -1,9 +1,11 @@
 /* ======================CATALOG======================== */
 .catalog {  
-  position: relative; 
+ 
   padding-bottom: 162px;
 }
-
+.catalog-container {
+  position: relative; 
+}
 .catalog-heder {
   font-weight: 600;
   font-size: 32px;
@@ -99,7 +101,7 @@
 .catalog-btn {
   position: absolute;
   right: 20px;
-  bottom: 80px;
+  bottom: -82px;
   transform: translate(0, 0);
   font-weight: 400;
   font-size: 12px;
@@ -154,7 +156,7 @@
   }
   .catalog-btn {
     right: 32px;
-    bottom: 128px;
+    bottom: -90px;
     padding: 18px 35px;
   }
 }
@@ -185,6 +187,6 @@
   }
   .catalog-btn {
     right: 24px;
-    bottom: 80px;    
+    bottom: -130px;    
   }
 }
