@@ -115,7 +115,7 @@
 .catalog-btn {
   position: absolute;
   right: 20px;
-  bottom: 40px;
+  bottom: -82px;
   transform: translate(0, 0);
   font-weight: 400;
   font-size: 12px;
@@ -179,7 +179,7 @@
 
   .catalog-btn {
     right: 32px;
-    bottom: 64px;
+    bottom: -90px;
     padding: 18px 35px;
   }
 }
@@ -217,6 +217,6 @@
 
   .catalog-btn {
     right: 24px;
-    bottom: 80px;
+    bottom: -130px;
   }
 }
