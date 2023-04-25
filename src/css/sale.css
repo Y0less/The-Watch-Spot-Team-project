@@ -1,5 +1,5 @@
 .sale-section {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 
@@ -74,8 +74,6 @@
     line-height: 1.16;
     color: rgba(20, 20, 20, 0.5);
     text-decoration: line-through;
-    display: flex;
-    align-items: flex-end;
 }
 
 .sale-suptitle-two {
@@ -83,14 +81,12 @@
 }
 
 .sale-desc {
-    padding-bottom: 8px;
     margin-bottom: 9px;
-    display: flex;
-    flex-direction: column;
 }
 
 .sale-desc::before {
     content: '';
+    display: block;
     width: 100%;
     height: 1px;
     background-color: black;
@@ -133,7 +129,7 @@
 @media screen and (min-width: 768px) {
 
     .sale-section {
-        padding-top: 128px;
+        padding-top: 64px;
         padding-bottom: 128px;
     }
 
