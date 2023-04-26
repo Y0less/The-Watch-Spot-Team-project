@@ -104,7 +104,7 @@
 }
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: var(--modal-primary-accent-color);
+  color: var(--footer-accent-color);
 }
 /* ---------------------------MOBILE MENU STYLES-------------------------- */
 
@@ -153,7 +153,7 @@
 
   .header-link:hover,
   .header-link:focus {
-    color: var(--modal-primary-accent-color);
+    color: var(--footer-accent-color);
   }
 
   .header-tel-link {
