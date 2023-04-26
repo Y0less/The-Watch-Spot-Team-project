@@ -1,17 +1,18 @@
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelectorAll('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-  };
+const openMenuBtn = document.querySelector('[data-menu-open]');
+const closeMenuBtn = document.querySelectorAll('[data-menu-close]');
+const menu = document.querySelector('[data-menu]');
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
+openMenuBtn.addEventListener('click', openMenu);
+closeMenuBtn.forEach(element => {
+  element.addEventListener('click', closeMenu);
+});
 
-  refs.closeMenuBtn.forEach(element => {
-    element.addEventListener('click', toggleModal);
-  });
+function openMenu() {
+  document.body.style.overflow = 'hidden';
+  menu.classList.add('is-open');
+}
 
-  function toggleModal() {
-    refs.menu.classList.toggle('is-open');
-  }
-})();
+function closeMenu() {
+  menu.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
