@@ -2,10 +2,10 @@
 .catalog {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 122px;
+  padding-bottom: 40px;
 }
 .catalog-container {
-  position: relative; 
+  position: relative;
 }
 .catalog-heder {
   font-weight: 600;
@@ -110,13 +110,12 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 40px;
 }
-
+.catalog-button {
+  text-align: right;
+}
 .catalog-btn {
-  position: absolute;
-  right: 20px;
-  bottom: -82px;
-  transform: translate(0, 0);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -132,7 +131,7 @@
 
 .catalog-btn:hover,
 .catalog-btn:focus {
-  background-color: var(--modal-primary-accent-color)
+  background-color: var(--modal-primary-accent-color);
 }
 
 @media screen and (min-width: 375px) {
@@ -158,7 +157,7 @@
 
   .catalog {
     padding-top: 64px;
-    padding-bottom: 154px;
+    padding-bottom: 64px;
   }
 
   .catalog-list {
@@ -178,8 +177,6 @@
   }
 
   .catalog-btn {
-    right: 32px;
-    bottom: -90px;
     padding: 18px 35px;
   }
 }
@@ -193,12 +190,15 @@
 
   .catalog {
     padding-top: 80px;
-    padding-bottom: 210px;
+    padding-bottom: 80px;
   }
-
+  .catalog-heder {
+    margin-bottom: 64px;
+  }
   .catalog-list {
     row-gap: 64px;
     column-gap: 24px;
+    margin-bottom: 80px;
   }
 
   .catalog-card {
@@ -213,10 +213,5 @@
     width: 276px;
     height: 325px;
     padding: 20px;
-  }
-
-  .catalog-btn {
-    right: 24px;
-    bottom: -130px;
   }
 }
